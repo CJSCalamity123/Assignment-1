@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Recap: Giants vs. Cowboys Week 1 Editorial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            giants: {
+              blue: '#0B2265',
+              red: '#A71930',
+              accent: '#184FB8',
+              slate: '#1E293B',
+              dark: '#050B14'
+            },
+            cowboys: {
+              silver: '#869397',
+              navy: '#041E42',
+              blue: '#003594'
+            }
+          },
+          fontFamily: {
+            headline: ['Cinzel', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glow-blue {
+      box-shadow: 0 0 35px -5px rgba(24, 79, 184, 0.35);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #0b1324;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #1e3a8a;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-[#050B14] text-slate-200 font-sans antialiased selection:bg-giants-red selection:text-white custom-scrollbar">
+
+  <!-- Top Sticky Navigation & Live Gameday Ticker -->
+  <header class="sticky top-0 z-40 bg-[#080f1e]/95 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center space-x-3">
+          <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-giants-blue border border-blue-400/30 text-white font-headline font-black text-sm">NY</span>
+          <div>
+            <span class="text-xs font-mono uppercase tracking-widest text-slate-400 block leading-tight">Digital Sports Editorial</span>
+            <span class="text-sm font-bold text-white tracking-wide">Big Blue Film Room</span>
+          </div>
+        </div>
+
+        <!-- Mini Scoreboard Header Widget -->
+        <div class="hidden md:flex items-center space-x-6 bg-slate-900/90 py-1.5 px-4 rounded-full border border-slate-700/60 shadow-inner">
+          <div class="flex items-center space-x-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-xs font-mono text-slate-400 uppercase">FINAL • NFL WEEK 1</span>
+          </div>
+          <div class="h-4 w-px bg-slate-700"></div>
+          <div class="flex items-center space-x-3 text-sm">
+            <span class="font-semibold text-slate-300">DAL 20</span>
+            <span class="text-xs text-slate-500 font-mono">@</span>
+            <span class="font-extrabold text-blue-400">NYG 28</span>
+          </div>
+        </div>
+
+        <!-- Format Badge -->
+        <div class="flex items-center space-x-2">
+          <span class="text-xs font-mono px-3 py-1 bg-giants-blue/40 border border-blue-500/40 text-blue-300 rounded-md font-semibold">
+            Sport Recap Project
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section: Headline, Byline, Cover & Score Matrix -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16">
+    <div class="space-y-4 text-center md:text-left mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono tracking-wider uppercase bg-blue-950/80 border border-blue-600/40 text-blue-300">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+        NFL Season Opener Analysis • NFC East Clash
+      </div>
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black font-headline text-white tracking-tight leading-tight">
+        Methodical Over Flash: How the Giants Ground Down Dallas in Week 1
+      </h1>
+      
+      <!-- Assignment Byline & Metadata Bar -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-4 pb-2 border-y border-slate-800 text-xs sm:text-sm text-slate-400">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-giants-blue to-giants-red flex items-center justify-center font-bold text-white shadow-md">
+            CS
+          </div>
+          <div class="text-left">
+            <div class="font-bold text-white text-base leading-none">Christopher Sanon</div>
+            <div class="text-blue-400 text-xs mt-0.5">Graduate Sport Analyst</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-4 text-slate-400 text-xs font-mono">
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>Published: October 30, 2026</span>
+          <span class="flex items-center gap-1.5"><svg class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>Reading Time: ~5 min (~730 words)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Matchup Scorecard Banner -->
+    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#0c162c] to-[#060c18] border border-slate-800 p-6 sm:p-8 mb-10 shadow-2xl glow-blue">
+      <div class="absolute -right-16 -top-16 w-64 h-64 bg-giants-blue/20 rounded-full blur-3xl pointer-events-none"></div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+        <!-- Dallas Column -->
+        <div class="flex items-center md:justify-start space-x-4">
+          <div class="w-16 h-16 rounded-xl bg-slate-900 border border-cowboys-silver/30 flex items-center justify-center p-2 shadow-lg">
+            <span class="text-2xl font-black text-cowboys-silver font-headline">DAL</span>
+          </div>
+          <div>
+            <div class="text-xs uppercase font-mono text-slate-400">Dallas Cowboys (0-1)</div>
+            <div class="text-4xl font-extrabold text-slate-300">20</div>
+            <div class="text-xs text-slate-500">Passing: 175 yds | Rush: 69 yds</div>
+          </div>
+        </div>
+
+        <!-- Center Match Status -->
+        <div class="text-center py-2 px-4 bg-slate-900/60 rounded-xl border border-slate-800">
+          <span class="text-xs font-mono font-bold tracking-widest text-emerald-400 uppercase block">FINAL • WEEK 1 OPENER</span>
+          <span class="text-lg font-headline font-bold text-white block mt-0.5">MetLife Stadium</span>
+          <span class="text-xs text-slate-400 block">East Rutherford, NJ • Sunday Night Football</span>
+        </div>
+
+        <!-- Giants Column -->
+        <div class="flex items-center justify-start md:justify-end space-x-4 text-left md:text-right">
+          <div>
+            <div class="text-xs uppercase font-mono text-blue-400">New York Giants (1-0)</div>
+            <div class="text-4xl font-extrabold text-white">28</div>
+            <div class="text-xs text-blue-300">Passing: 229 yds | Rush: 165 yds</div>
+          </div>
+          <div class="w-16 h-16 rounded-xl bg-giants-blue border border-blue-400/40 flex items-center justify-center p-2 shadow-lg">
+            <span class="text-2xl font-black text-white font-headline">NYG</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quarter Linescore Table -->
+      <div class="mt-6 pt-4 border-t border-slate-800/80 overflow-x-auto">
+        <table class="w-full text-xs text-center font-mono">
+          <thead>
+            <tr class="text-slate-400 uppercase">
+              <th class="text-left pb-2 font-semibold">Team</th>
+              <th class="pb-2">Q1</th>
+              <th class="pb-2">Q2</th>
+              <th class="pb-2">Q3</th>
+              <th class="pb-2">Q4</th>
+              <th class="pb-2 font-bold text-white">Total</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-800/50">
+            <tr class="text-slate-300">
+              <td class="text-left py-2 font-semibold text-slate-400">Dallas Cowboys</td>
+              <td>0</td>
+              <td>7</td>
+              <td>7</td>
+              <td>6</td>
+              <td class="font-bold text-white">20</td>
+            </tr>
+            <tr class="text-blue-300 font-semibold bg-blue-950/20">
+              <td class="text-left py-2 text-white">New York Giants</td>
+              <td>7</td>
+              <td>7</td>
+              <td>7</td>
+              <td>7</td>
+              <td class="font-extrabold text-blue-400">28</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Editorial Storyline Navigation Tabs -->
+    <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-4 mb-8">
+      <button onclick="switchTab('tab-rivalry')" id="btn-rivalry" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 bg-giants-blue text-white shadow-md border border-blue-400/30">
+        Part 1: The Rivalry & History
+      </button>
+      <button onclick="switchTab('tab-season')" id="btn-season" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 bg-slate-900 text-slate-400 hover:text-white border border-slate-800">
+        Part 2: The Season Beginnings
+      </button>
+      <button onclick="switchTab('tab-highlights')" id="btn-highlights" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 bg-slate-900 text-slate-400 hover:text-white border border-slate-800">
+        Part 3: Game Highlights & Turning Points
+      </button>
+      <button onclick="switchTab('tab-tactics')" id="btn-tactics" class="tab-btn px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 bg-slate-900 text-slate-400 hover:text-white border border-slate-800">
+        Part 4: Critical Tactical Analysis
+      </button>
+    </div>
+
+    <!-- TAB 1: THE RIVALRY & SHADOW -->
+    <section id="tab-rivalry" class="tab-content block space-y-6">
+      <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4">
+        <h2 class="text-2xl font-bold font-headline text-white flex items-center gap-2">
+          <span class="text-giants-red">I.</span> The 66-Year Shadow: A Blood Feud Re-Ignited
+        </h2>
+        <p class="text-base sm:text-lg">
+          Few matchups in North American professional sports carry the psychological and geographic tension of the New York Football Giants and the Dallas Cowboys. Spanning 128 meetings since 1960, this rivalry was forged in muddy 1960s clashes at Yankee Stadium, codified through the brutal collisions of the 1980s Parcells-Landry warfare, and punctuated by unforgettable postseason heartbreaks.
+        </p>
+        <p>
+          Yet in recent years, this classic rivalry had curdled into a one-sided nightmare for Big Blue. Dallas entered MetLife Stadium holding a lopsided command over the series, having won 16 of the previous 18 encounters and asserting a nine-game chokehold that stripped New York of its NFC East swagger. Every season opener between these two franchises felt pre-written: high-flying Dallas perimeter speed carving up conservative New York schemes while Jerry Jones celebrated on the luxury suite monitors.
+        </p>
+        <p>
+          To change that trajectory in 2026, the Giants didn't just need a victory; they needed a systematic identity exorcism. They needed to confront the ghosts of their past failures by proving they could take Dallas’s best punch and respond with ruthless, physical football.
+        </p>
+      </div>
+
+      <!-- Historical Photo Dispatch Gallery (Curated from Giants.com Archive) -->
+      <div class="mt-8 pt-6 border-t border-slate-800">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-sm font-mono uppercase tracking-wider text-blue-400 font-bold flex items-center gap-2">
+            <span>📸</span> Through the Years: Giants vs. Cowboys Archival Gallery
+          </h3>
+          <span class="text-xs text-slate-500">Source: Giants.com / AP Photos</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Photo 1: Y.A. Tittle -->
+          <div onclick="openLightbox(0)" class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-900 shadow-md cursor-pointer hover:border-blue-500/50 transition duration-300">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-950">
+              <img src="YA Tittle.jpg" alt="Y.A. Tittle 1963 Yankee Stadium" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1566577739112-5180d4bf9390?auto=format&fit=crop&w=600&q=80';">
+            </div>
+            <div class="p-3">
+              <span class="text-[11px] font-bold text-blue-400 block font-mono">1963 • Yankee Stadium</span>
+              <p class="text-xs text-slate-300 mt-1 line-clamp-2">Y.A. Tittle (14) directs a line shift against Dallas in a 42-14 rout.</p>
+            </div>
+          </div>
+
+          <!-- Photo 2: Lawrence Taylor -->
+          <div onclick="openLightbox(1)" class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-900 shadow-md cursor-pointer hover:border-blue-500/50 transition duration-300">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-950">
+              <img src="Lawrence Taylor.jpg" alt="Lawrence Taylor 1981 Fumble Recovery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?auto=format&fit=crop&w=600&q=80';">
+            </div>
+            <div class="p-3">
+              <span class="text-[11px] font-bold text-blue-400 block font-mono">1981 • Giants Stadium</span>
+              <p class="text-xs text-slate-300 mt-1 line-clamp-2">Rookie LT hoists Tony Dorsett's OT fumble, clinching a 17-year playoff drought break.</p>
+            </div>
+          </div>
+
+          <!-- Photo 3: Mark Bavaro -->
+          <div onclick="openLightbox(2)" class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-900 shadow-md cursor-pointer hover:border-blue-500/50 transition duration-300">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-950">
+              <img src="Mark Bavaro.jpg" alt="Mark Bavaro Touchdown Prayer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80';">
+            </div>
+            <div class="p-3">
+              <span class="text-[11px] font-bold text-blue-400 block font-mono">1986 • Bavaro Toughness</span>
+              <p class="text-xs text-slate-300 mt-1 line-clamp-2">Mark Bavaro (89), whose bruising play across the middle personified 80s dominance.</p>
+            </div>
+          </div>
+
+          <!-- Photo 4: R.W. McQuarters -->
+          <div onclick="openLightbox(3)" class="group relative rounded-xl overflow-hidden border border-slate-800 bg-slate-900 shadow-md cursor-pointer hover:border-blue-500/50 transition duration-300">
+            <div class="aspect-[4/3] overflow-hidden bg-slate-950">
+              <img src="RW.jpg" alt="R.W. McQuarters 2008 Interception" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516245834210-c4c142787335?auto=format&fit=crop&w=600&q=80';">
+            </div>
+            <div class="p-3">
+              <span class="text-[11px] font-bold text-blue-400 block font-mono">2008 • Texas Stadium</span>
+              <p class="text-xs text-slate-300 mt-1 line-clamp-2">R.W. McQuarters outleaps Terry Glenn with 9s left to upset #1-seed Dallas 21-17.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: THE SEASON BEGINNINGS -->
+    <section id="tab-season" class="tab-content hidden space-y-6">
+      <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4">
+        <h2 class="text-2xl font-bold font-headline text-white flex items-center gap-2">
+          <span class="text-blue-400">II.</span> Fresh Regimes & Anxieties: The 2026 Season Launch
+        </h2>
+        <p class="text-base sm:text-lg">
+          The 2026 season opener arrived under heavy atmospheric expectations. In New York, the regular season debut of head coach John Harbaugh brought immediate gravitas. Pairing Harbaugh’s physical championship standard with offensive coordinator Matt Nagy and new defensive coordinator Dennard Wilson signaled a total structural rebuild away from turnover-prone improvisation toward disciplined execution.
+        </p>
+        <p>
+          Dallas entered Week 1 facing its own high-stakes recalibration. Under defensive coordinator Christian Parker, the Cowboys sought to rectify a unit that had hemorrhaged chunk rushing yards a season prior. Armed with first-round safety Caleb Downs and pass-rusher Malachi Lawrence, Parker’s scheme aimed to neutralize second-year quarterback Jaxson Dart and shut down the interior running lanes for Cameron Skattebo.
+        </p>
+        
+        <!-- Pre-Game Video Preview Callout Container -->
+        <div class="my-6 p-5 rounded-xl border border-slate-700 bg-slate-900/90 shadow-xl">
+          <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-b border-slate-800 pb-3 mb-4">
+            <div class="flex items-center gap-2">
+              <span class="text-red-500 font-bold">▶</span>
+              <h3 class="text-base font-bold text-white">Pre-Game Intelligence: NFL Week 1 Matchup Preview</h3>
+            </div>
+            <a href="https://youtu.be/4GifEHJvOuw" target="_blank" class="text-xs text-blue-400 hover:underline font-mono">Watch Full Preview on YouTube ↗</a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-300">
+            <div class="bg-slate-950/70 p-3.5 rounded-lg border border-slate-800">
+              <strong class="text-blue-400 block mb-1 uppercase font-mono">New York’s Baseline:</strong>
+              Second-year QB Jaxson Dart operating with rehabilitated star wideout Malik Nabers, veteran Darnell Mooney, and heavy formations utilizing former Ravens Pro Bowl fullback Patrick Ricard.
+            </div>
+            <div class="bg-slate-950/70 p-3.5 rounded-lg border border-slate-800">
+              <strong class="text-cowboys-silver block mb-1 uppercase font-mono">Dallas’s Primary Concern:</strong>
+              Dak Prescott’s historical Week 1 sluggishness (averaging just 161 passing yards across four consecutive openers) facing a revamped Giants defensive front featuring Brian Burns and Abdul Carter.
+            </div>
+          </div>
+        </div>
+
+        <p>
+          The question hanging over East Rutherford on Sunday night was straightforward: could Harbaugh’s ground-and-pound culture shock Dallas before the Cowboys' offensive weapons took over the game?
+        </p>
+      </div>
+    </section>
+
+    <!-- TAB 3: HIGHLIGHTS & TURNING POINTS -->
+    <section id="tab-highlights" class="tab-content hidden space-y-6">
+      <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4">
+        <h2 class="text-2xl font-bold font-headline text-white flex items-center gap-2">
+          <span class="text-emerald-400">III.</span> Turning Points: The Chronology of Big Blue’s Surge
+        </h2>
+        <p class="text-base sm:text-lg">
+          The opening quarter settled into an exchange of defensive blows, with both teams feeling out new personnel. New York struck first on an opening-drive goal-line plunge, but Dallas countered behind Prescott finding CeeDee Lamb for a 1-yard score, leveling the tally at 7–7 midway through the second quarter. From that moment, four pivotal sequences tilted the game irrevocably toward the home sideline:
+        </p>
+      </div>
+
+      <!-- Interactive Highlight Timeline Cards -->
+      <div class="space-y-4 pt-2">
+        <!-- Moment 1 -->
+        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/70 hover:border-blue-500/40 transition duration-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <span class="text-xs font-mono font-bold uppercase text-giants-red tracking-wider flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-giants-red"></span> Turning Point 1 • 2nd Quarter (0:48 Remaining)
+            </span>
+            <span class="text-xs font-mono text-slate-400">Broadcast Marker: [17:07]</span>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-1.5">The Holland Trap on the "NASCAR" Blitz</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            On 3rd-and-5 from Dallas territory, New York unleashed its designated speed-rush package. As Brian Burns and Abdul Carter collapsed the pocket, Prescott scrambled toward the right sideline and threw an off-balance pass. Safety Jevon Holland undercut George Pickens along the boundary, dragging his knees to secure an interception that flipped the entire momentum of the half.
+          </p>
+        </div>
+
+        <!-- Moment 2 -->
+        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/70 hover:border-blue-500/40 transition duration-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <span class="text-xs font-mono font-bold uppercase text-blue-400 tracking-wider flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-blue-400"></span> Turning Point 2 • 2nd Quarter (0:09 Remaining)
+            </span>
+            <span class="text-xs font-mono text-slate-400">Broadcast Marker: [19:15]</span>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-1.5">Dart’s 2-Minute Drill & Likely’s Toe-Tap Strike</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            With 48 seconds and zero timeouts, Jaxson Dart engineered a flawless 51-yard drive. Dart rifled completions to Malik Nabers and rookie Malachi Fields before finding tight end Isaiah Likely on a corner route. Likely dragged both cleats in the pylon corner for a stunning 9-yard touchdown, giving New York a 14–7 lead as the halftime whistle blew.
+          </p>
+        </div>
+
+        <!-- Moment 3 -->
+        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/70 hover:border-blue-500/40 transition duration-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <span class="text-xs font-mono font-bold uppercase text-emerald-400 tracking-wider flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Turning Point 3 • 4th Quarter (6:20 Remaining)
+            </span>
+            <span class="text-xs font-mono text-slate-400">Broadcast Marker: [35:48]</span>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-1.5">The Taunt, The Penalty, and the Missed PAT</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Trailing 28–14, Dallas mounted an answer with a 17-yard touchdown pass to Javonte Williams. However, an unsportsmanlike conduct penalty for taunting backed up the point-after attempt 15 yards. Brandon Aubrey pushed the 48-yard PAT wide right, preserving New York’s critical two-possession 28–20 cushion.
+          </p>
+        </div>
+
+        <!-- Moment 4 -->
+        <div class="p-5 rounded-xl border border-slate-800 bg-slate-900/70 hover:border-blue-500/40 transition duration-200">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+            <span class="text-xs font-mono font-bold uppercase text-yellow-400 tracking-wider flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-yellow-400"></span> Turning Point 4 • 4th Quarter (5:10 to 0:00)
+            </span>
+            <span class="text-xs font-mono text-slate-400">Broadcast Marker: [36:07]</span>
+          </div>
+          <h4 class="text-lg font-bold text-white mb-1.5">Skattebo's 5-Minute Masterclass in Physical Closure</h4>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Holding an 8-point lead with 5:10 on the clock, John Harbaugh refused to surrender the football. Behind pulling center John Michael Schmitz and guard Jon Runyan Jr., rookie Cameron Skattebo hammered the interior for three conversions, finishing with 81 rushing yards and 57 yards after contact. Dart sealed the game on a bootleg keeper, running the clock out entirely to seal the 28–20 win.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: CRITICAL TACTICAL ANALYSIS -->
+    <section id="tab-tactics" class="tab-content hidden space-y-6">
+      <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4">
+        <h2 class="text-2xl font-bold font-headline text-white flex items-center gap-2">
+          <span class="text-giants-blue">IV.</span> Critical Film Room Analysis: Heavy Personnel & Flat Voids
+        </h2>
+        <p class="text-base sm:text-lg">
+          The defining difference between New York and Dallas in Week 1 was not statistical variance—it was offensive architecture. While Dallas deployed modern 11-personnel spreads that relied on one-on-one isolations, New York won the game by resurrecting old-school 22-personnel (two running backs, two tight ends) to systematically overwhelm Dallas's perimeter discipline.
+        </p>
+      </div>
+
+      <!-- Comparative Stat Metric Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+          <span class="text-xs font-mono text-slate-400 uppercase block">Time of Possession</span>
+          <span class="text-2xl sm:text-3xl font-extrabold text-blue-400 block my-1">36:40</span>
+          <span class="text-[11px] text-slate-500">Cowboys: 23:20</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+          <span class="text-xs font-mono text-slate-400 uppercase block">Red Zone Conversion</span>
+          <span class="text-2xl sm:text-3xl font-extrabold text-emerald-400 block my-1">4 of 4</span>
+          <span class="text-[11px] text-slate-500">100% TD Efficiency</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+          <span class="text-xs font-mono text-slate-400 uppercase block">Passing Rating (Dart)</span>
+          <span class="text-2xl sm:text-3xl font-extrabold text-white block my-1">134.2</span>
+          <span class="text-[11px] text-slate-500">230 YDS, 3 TD, 0 INT</span>
+        </div>
+        <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800 text-center">
+          <span class="text-xs font-mono text-slate-400 uppercase block">Penalties / Yards</span>
+          <span class="text-2xl sm:text-3xl font-extrabold text-giants-red block my-1">4 / 30</span>
+          <span class="text-[11px] text-slate-500">Cowboys: 11 / 98 YDS</span>
+        </div>
+      </div>
+
+      <!-- Interactive SVG Chalkboard Scheme Simulator -->
+      <div class="p-6 rounded-2xl bg-[#030914] border border-blue-900/40 shadow-2xl my-6">
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-3 border-b border-slate-800 gap-2 mb-4">
+          <div>
+            <h3 class="text-base font-bold text-white flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span> Tactical Scheme: Heavy 22-Personnel Crack-Fake Void
+            </h3>
+            <p class="text-xs text-slate-400 mt-0.5">Dissecting Isaiah Likely's 3rd-Quarter Touchdown [Broadcast 24:05]</p>
+          </div>
+          <button id="run-play-btn" onclick="animatePlay()" class="px-4 py-1.5 text-xs font-mono font-bold bg-blue-600 hover:bg-blue-500 text-white rounded-md transition shadow">
+            ▶ Run Chalkboard Play
+          </button>
+        </div>
+
+        <div class="relative w-full aspect-[2/1] bg-[#071324] rounded-xl border border-slate-800 flex items-center justify-center overflow-hidden">
+          <svg id="chalkboard-svg" class="w-full h-full p-4" viewBox="0 0 600 300">
+            <!-- Yard lines -->
+            <line x1="50" y1="20" x2="50" y2="280" stroke="#1e293b" stroke-width="2" stroke-dasharray="4"/>
+            <line x1="150" y1="20" x2="150" y2="280" stroke="#1e293b" stroke-width="2"/>
+            <line x1="250" y1="20" x2="250" y2="280" stroke="#1e293b" stroke-width="2" stroke-dasharray="4"/>
+            <line x1="350" y1="20" x2="350" y2="280" stroke="#1e293b" stroke-width="2"/>
+            <line x1="450" y1="20" x2="450" y2="280" stroke="#1e293b" stroke-width="2" stroke-dasharray="4"/>
+            <line x1="550" y1="20" x2="550" y2="280" stroke="#ef4444" stroke-width="3"/>
+            <text x="560" y="40" fill="#ef4444" font-size="10" font-family="monospace">GOAL</text>
+
+            <!-- Line of Scrimmage -->
+            <line x1="300" y1="30" x2="300" y2="270" stroke="#3b82f6" stroke-width="2"/>
+
+            <!-- Offensive Players -->
+            <!-- Offensive Line -->
+            <circle cx="300" cy="110" r="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5"/>
+            <circle cx="300" cy="130" r="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5"/>
+            <circle cx="300" cy="150" r="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5"/>
+            <text x="296" y="154" fill="#fff" font-size="9" font-family="monospace">C</text>
+            <circle cx="300" cy="170" r="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5"/>
+            <circle cx="300" cy="190" r="10" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5"/>
+
+            <!-- Fullback Patrick Ricard -->
+            <circle id="player-ricard" cx="240" cy="150" r="10" fill="#1d4ed8" stroke="#93c5fd" stroke-width="1.5"/>
+            <text x="233" y="154" fill="#fff" font-size="8" font-family="monospace">FB</text>
+
+            <!-- Halfback Cameron Skattebo -->
+            <circle id="player-rb" cx="200" cy="150" r="10" fill="#1d4ed8" stroke="#93c5fd" stroke-width="1.5"/>
+            <text x="193" y="154" fill="#fff" font-size="8" font-family="monospace">RB</text>
+
+            <!-- Quarterback Jaxson Dart -->
+            <circle id="player-qb" cx="260" cy="150" r="10" fill="#2563eb" stroke="#bfdbfe" stroke-width="2"/>
+            <text x="254" y="154" fill="#fff" font-size="8" font-family="monospace">QB</text>
+
+            <!-- Tight End Isaiah Likely (Starts wide left) -->
+            <circle id="player-likely" cx="300" cy="60" r="11" fill="#dc2626" stroke="#fca5a5" stroke-width="2"/>
+            <text x="294" y="64" fill="#fff" font-size="8" font-weight="bold" font-family="monospace">TE</text>
+
+            <!-- Defensive Players -->
+            <!-- Dallas Linebackers -->
+            <rect id="def-lb1" x="350" y="90" width="16" height="16" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="353" y="102" fill="#fff" font-size="8" font-family="monospace">X</text>
+            <rect id="def-lb2" x="350" y="140" width="16" height="16" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="353" y="152" fill="#fff" font-size="8" font-family="monospace">X</text>
+
+            <!-- Cornerback / Nickel -->
+            <rect id="def-cb" x="330" y="55" width="16" height="16" fill="#334155" stroke="#94a3b8" stroke-width="1.5"/>
+            <text x="333" y="67" fill="#fff" font-size="8" font-family="monospace">X</text>
+
+            <!-- Animated Play Routes -->
+            <path id="route-likely" d="M 300 60 Q 320 100 360 80 T 540 50" fill="none" stroke="#f87171" stroke-width="2.5" stroke-dasharray="6" class="opacity-0 transition-opacity duration-300"/>
+            <path id="route-ball" d="M 260 150 Q 380 90 535 55" fill="none" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4" class="opacity-0 transition-opacity duration-300"/>
+          </svg>
+        </div>
+        <p class="text-xs text-slate-400 mt-3 text-center">
+          <span class="text-yellow-400 font-semibold">The Trap:</span> Motioning Likely down forces the outside corner into run fit anticipation. Likely fakes the crack block on the linebacker, releases completely uncovered into the flat, and hauls in the walking touchdown.
+        </p>
+      </div>
+
+      <div class="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4">
+        <p>
+          By maintaining a staggering 63.6% 3rd-down success rate and keeping Prescott on the bench for nearly 37 minutes, the Giants turned the game into an attritional contest that Dallas was ill-equipped to survive.
+        </p>
+      </div>
+    </section>
+
+    <!-- Interactive Reader MVP Polling Widget -->
+    <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-slate-900 to-slate-950 border border-slate-800 shadow-xl">
+      <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+        <div>
+          <h3 class="text-base font-bold text-white">Editorial Poll: Who was Big Blue’s Week 1 MVP?</h3>
+          <p class="text-xs text-slate-400">Cast your vote based on tactical leverage and game impact</p>
+        </div>
+        <span class="text-xs font-mono text-blue-400">Interactive Voting</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3" id="poll-container">
+        <button onclick="voteMVP('dart')" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-500 text-left transition flex flex-col justify-between group">
+          <span class="text-sm font-bold text-white group-hover:text-blue-400">Jaxson Dart (QB)</span>
+          <span class="text-xs text-slate-400 mt-1">230 YDS, 3 TD, 134.2 Rating, 0 Turnovers</span>
+          <div class="mt-3 w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+            <div id="bar-dart" class="bg-blue-500 h-full w-[54%]"></div>
+          </div>
+          <span id="label-dart" class="text-[10px] font-mono text-slate-400 mt-1">54% of votes</span>
+        </button>
+
+        <button onclick="voteMVP('likely')" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-500 text-left transition flex flex-col justify-between group">
+          <span class="text-sm font-bold text-white group-hover:text-blue-400">Isaiah Likely (TE)</span>
+          <span class="text-xs text-slate-400 mt-1">8 REC, 78 YDS, 2 Crucial TDs (Toe-Tap + Flat)</span>
+          <div class="mt-3 w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+            <div id="bar-likely" class="bg-emerald-500 h-full w-[31%]"></div>
+          </div>
+          <span id="label-likely" class="text-[10px] font-mono text-slate-400 mt-1">31% of votes</span>
+        </button>
+
+        <button onclick="voteMVP('skattebo')" class="p-3 rounded-xl bg-slate-950 border border-slate-800 hover:border-blue-500 text-left transition flex flex-col justify-between group">
+          <span class="text-sm font-bold text-white group-hover:text-blue-400">Cam Skattebo (RB)</span>
+          <span class="text-xs text-slate-400 mt-1">18 Carries, 81 YDS, 5:10 Clock-Killing Drive</span>
+          <div class="mt-3 w-full bg-slate-800 rounded-full h-1.5 overflow-hidden">
+            <div id="bar-skattebo" class="bg-yellow-500 h-full w-[15%]"></div>
+          </div>
+          <span id="label-skattebo" class="text-[10px] font-mono text-slate-400 mt-1">15% of votes</span>
+        </button>
+      </div>
+      <div id="vote-feedback" class="mt-3 text-xs text-center text-emerald-400 font-mono hidden">
+        ✓ Vote recorded! Thank you for participating.
+      </div>
+    </div>
+
+    <!-- Archival Lightbox Modal -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+      <div class="relative max-w-4xl w-full bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden shadow-2xl">
+        <button onclick="closeLightbox()" class="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/70 text-white flex items-center justify-center hover:bg-slate-700 transition">
+          ✕
+        </button>
+        <div class="aspect-video bg-black flex items-center justify-center overflow-hidden">
+          <img id="lightbox-img" src="" alt="" class="max-h-full max-w-full object-contain">
+        </div>
+        <div class="p-6">
+          <span id="lightbox-tag" class="text-xs font-mono font-bold text-blue-400 uppercase tracking-widest block mb-1"></span>
+          <h4 id="lightbox-title" class="text-lg font-bold text-white mb-2"></h4>
+          <p id="lightbox-desc" class="text-sm text-slate-300 leading-relaxed"></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-xs text-slate-500 font-mono">
+    Sport Recap Project • Analyzed & Compiled by Christopher Sanon, Graduate Sport Analyst • October 30, 2026
+  </footer>
+
+  <script>
+    // Tab Switching Logic
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.add('hidden');
+        tab.classList.remove('block');
+      });
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-giants-blue', 'text-white', 'border-blue-400/30');
+        btn.classList.add('bg-slate-900', 'text-slate-400', 'border-slate-800');
+      });
+
+      document.getElementById(tabId).classList.remove('hidden');
+      document.getElementById(tabId).classList.add('block');
+
+      const activeBtnId = tabId.replace('tab-', 'btn-');
+      const activeBtn = document.getElementById(activeBtnId);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-giants-blue', 'text-white', 'border-blue-400/30');
+        activeBtn.classList.remove('bg-slate-900', 'text-slate-400', 'border-slate-800');
+      }
+    }
+
+    // Historical Lightbox Data
+    const galleryData = [
+      {
+        src: 'YA Tittle.jpg',
+        tag: '1963 • Yankee Stadium • AP Photo / Ruben Goldberg',
+        title: 'Y.A. Tittle Calls an Audible Against Tom Landry\'s Defense',
+        desc: 'Quarterback Y.A. Tittle directs a last-minute line shift as the Giants overpower the young Dallas franchise 42-14 at Yankee Stadium on Nov. 10, 1963.'
+      },
+      {
+        src: 'Lawrence Taylor.jpg',
+        tag: '1981 • Giants Stadium • AP Photo / Bill Kostroun',
+        title: 'LT Hoists Tony Dorsett\'s Overtime Fumble',
+        desc: 'Rookie linebacker Lawrence Taylor stands triumphant in overtime on Dec. 19, 1981, securing the ball that launched the Giants to their first postseason berth in 17 seasons.'
+      },
+      {
+        src: 'Mark Bavaro.jpg',
+        tag: '1986 • Giants Championship Era • AP Photo / Ray Stubblebine',
+        title: 'Mark Bavaro: The Physical Blueprint',
+        desc: 'Tight end Mark Bavaro in his signature post-touchdown prayer. Bavaro\'s punishing presence over the middle anchored the 1986 team that swept Dallas on the way to Super Bowl XXI.'
+      },
+      {
+        src: 'image_2026-10-29_153108799.jpg',
+        tag: '2008 • Texas Stadium • AP Photo / Donna McWilliam',
+        title: 'R.W. McQuarters Shocks the #1 Seeded Cowboys',
+        desc: 'Cornerback R.W. McQuarters outleaps Terry Glenn with 9 seconds remaining to preserve a 21-17 NFC Divisional upset in Irving, Texas on Jan. 13, 2008.'
+      }
+    ];
+
+    function openLightbox(index) {
+      const item = galleryData[index];
+      document.getElementById('lightbox-img').src = item.src;
+      document.getElementById('lightbox-tag').innerText = item.tag;
+      document.getElementById('lightbox-title').innerText = item.title;
+      document.getElementById('lightbox-desc').innerText = item.desc;
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Chalkboard Play Simulation
+    let isAnimated = false;
+    function animatePlay() {
+      const likelyRoute = document.getElementById('route-likely');
+      const ballRoute = document.getElementById('route-ball');
+      const playerLikely = document.getElementById('player-likely');
+      const lb1 = document.getElementById('def-lb1');
+      const cb = document.getElementById('def-cb');
+      const btn = document.getElementById('run-play-btn');
+
+      if (!isAnimated) {
+        likelyRoute.classList.remove('opacity-0');
+        likelyRoute.classList.add('opacity-100');
+        ballRoute.classList.remove('opacity-0');
+        ballRoute.classList.add('opacity-100');
+
+        playerLikely.setAttribute('cx', '540');
+        playerLikely.setAttribute('cy', '50');
+        playerLikely.style.transition = 'all 1.2s cubic-bezier(0.4, 0, 0.2, 1)';
+
+        lb1.setAttribute('x', '330');
+        lb1.setAttribute('y', '120');
+        lb1.style.transition = 'all 0.8s ease';
+
+        cb.setAttribute('x', '310');
+        cb.setAttribute('y', '85');
+        cb.style.transition = 'all 0.8s ease';
+
+        btn.innerText = '↺ Reset Chalkboard';
+        isAnimated = true;
+      } else {
+        likelyRoute.classList.add('opacity-0');
+        likelyRoute.classList.remove('opacity-100');
+        ballRoute.classList.add('opacity-0');
+        ballRoute.classList.remove('opacity-100');
+
+        playerLikely.setAttribute('cx', '300');
+        playerLikely.setAttribute('cy', '60');
+
+        lb1.setAttribute('x', '350');
+        lb1.setAttribute('y', '90');
+
+        cb.setAttribute('x', '330');
+        cb.setAttribute('y', '55');
+
+        btn.innerText = '▶ Run Chalkboard Play';
+        isAnimated = false;
+      }
+    }
+
+    // MVP Polling Action
+    function voteMVP(choice) {
+      document.getElementById('vote-feedback').classList.remove('hidden');
+      if (choice === 'dart') {
+        document.getElementById('bar-dart').style.width = '60%';
+        document.getElementById('label-dart').innerText = '60% of votes';
+      } else if (choice === 'likely') {
+        document.getElementById('bar-likely').style.width = '35%';
+        document.getElementById('label-likely').innerText = '35% of votes';
+      } else {
+        document.getElementById('bar-skattebo').style.width = '20%';
+        document.getElementById('label-skattebo').innerText = '20% of votes';
+      }
+    }
+  </script>
+</body>
+</html>
